@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Caculadora IMC</title>
 </head>
 <body>
     <div class="container">
         <div class="container-calculadora">
-            <h1>Calcule seu IMC</h1>
-            <div class="input-container">
-                <label for="peso">Peso</label>
-                <input class="peso" name="peso" type="number" placeholder="Peso (Kg)">
-                
-                <label for="altura">Altura</label>
-                <input class="altura" name="altura" type="number" placeholder="Altura (Cm)">
+            <h1>Cálcule seu IMC</h1>
 
-                <button onclick="calculaImc()">Calcular</button>
+            <div class="input-container">
+                <div>
+                    <label for="peso">Peso</label>
+                    <input class="peso" name="peso" type="number" placeholder="(Kg)">
+                </div>
+                
+                <div>
+                    <label for="altura">Altura</label>
+                    <input class="altura" name="altura" type="number" placeholder="(Cm)">
+                </div>
+                
+
+                <button class="button-calcular" onclick="calculaImc()">Calcular Imc</button>
                 <h2>Informe seus dados!</h2>
             </div>
         </div>

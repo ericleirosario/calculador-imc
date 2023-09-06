@@ -18,6 +18,8 @@ function calculaImc() {
         resultado.innerHTML = "Obesidade grau 1";
     } else if(imc >= 35 && imc < 41){
         resultado.innerHTML = "Obesidade grau 2";
+    } else if(peso == 0 && altura == 0) {
+        resultado.innerHTML = "Nem um valor digitado";
     } else {
         resultado.innerHTML = "Obesidade grau 3";
     }

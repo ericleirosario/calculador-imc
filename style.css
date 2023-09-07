@@ -102,25 +102,26 @@ h2 {
 
 @media screen and (max-width: 480px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
 
     .container-calculadora {
-        width: 96%;
+        width: 100%;
     }
 
     h1 {
-        font-size: 33px;
+        font-size: 32px;
     }
 }
 
 @media screen and (max-width: 360px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
 
     .container-calculadora {
-        width: 96%;
+        width: 100%;
+        padding: 30px 30px;
     }
 
     h1 {

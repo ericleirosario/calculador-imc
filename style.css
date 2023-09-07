@@ -22,7 +22,8 @@ body {
 }
 
 .container-calculadora {
-    width: 400px;    
+    width: 400px;
+    height: 80%;    
     padding: 30px 50px;
     border: 2px solid #E27500;    
     border-radius: 10px;

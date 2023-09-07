@@ -7,27 +7,27 @@
     <title>Caculadora IMC</title>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <div class="container-calculadora">
             <h1>Cálcule seu IMC</h1>
 
             <div class="input-container">
-                <div>
-                    <label for="peso">Peso</label>
-                    <input class="peso" name="peso" type="number" placeholder="(Kg)">
-                </div>
-                
-                <div>
-                    <label for="altura">Altura</label>
-                    <input class="altura" name="altura" type="number" placeholder="(Cm)">
-                </div>
-                
-
-                <button class="button-calcular" onclick="calculaImc()">Calcular Imc</button>
-                <h2>Informe seus dados!</h2>
+                <label for="peso">Peso(Kg)</label>
+                <input class="peso" name="peso" type="number" placeholder="Ex: 60" required>
             </div>
+                
+            <div class="input-container">
+                <label for="altura">Altura(Cm)</label>
+                <input class="altura" name="altura" type="number" placeholder="Ex: 1.70" required>
+            </div>
+            
+            <div class="button-container">
+                <button onclick="calculaImc()" class="button-calcular">Calcular Imc</button>
+            </div>
+            
+            <h2>Informe seus dados!</h2>
         </div>
-    </div>
+    </main>
 </body>
 <script src="./script.js"></script>
 </html>

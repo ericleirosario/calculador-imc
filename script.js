@@ -1,7 +1,7 @@
 
-function calculaImc() {
-    const peso = document.querySelector(".peso").value
-    const altura = document.querySelector(".altura").value
+function calculateImc() {
+    const peso = document.querySelector("#weight").value
+    const altura = document.querySelector("#height").value
     const resultado = document.querySelector("h2")
 
     const imc = (peso / (altura * altura)).toFixed(2);
@@ -14,19 +14,19 @@ function calculaImc() {
         resultado.innerHTML = "Insira sua altura!"
     } else {
         if(imc > 0 && imc < 17) {
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Você está muito abaixo do peso";	
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Você está muito abaixo do peso";	
         } else if(imc >=17 && imc < 18.5){
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Você está abaixo do peso";
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Você está abaixo do peso";
         } else if(imc >= 18.5 && imc < 25){
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Seu peso está normal";	
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Seu peso está normal";	
         } else if(imc >= 25 && imc < 30){
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Você está acima do peso";
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Você está acima do peso";
         } else if(imc >= 30 && imc < 35){
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Obesidade grau 1";
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Obesidade grau 1";
         } else if(imc >= 35 && imc < 41){
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Obesidade grau 2";
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Obesidade grau 2";
         } else {
-            resultado.innerHTML = "Seu IMC é: " +imc+ " Obesidade grau 3";
+            resultado.innerHTML = "Seu IMC é: " +imc+ "<br>Obesidade grau 3";
         }
     }
 }

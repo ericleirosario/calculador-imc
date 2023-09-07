@@ -21,9 +21,9 @@ body {
     justify-content: center;
 }
 
-.container-calculadora {
+.container-calculator {
     width: 400px;
-    height: 80%;    
+    height: 490px;    
     padding: 30px 50px;
     border: 2px solid #E27500;    
     border-radius: 10px;
@@ -53,7 +53,7 @@ h1 {
 .input-container input {
     font-size: 16px;    
     padding: 12px;
-    border: 2px solid #008080;
+    border: 2px solid #000000;
     border-radius: 4px;
     width: 100%;    
 }
@@ -74,17 +74,23 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-.button-calcular {
+.button-calculate {
     width: 100%;
     font-size: 16px;
     margin: 10px 0;
-    padding: 16px;
-    font-weight: 600;
+    padding: 12px;
+    font-weight: 700;
     text-transform: uppercase;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     background: #E27500;
+    transition: 0.3s linear;
+}
+
+.button-calculate:hover {
+    color: #ffffff;
+    background: #9d5201;
 }
 
 h2 {
@@ -92,4 +98,32 @@ h2 {
     text-align: center;
     margin-top: 16px;
     color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .container-calculadora {
+        width: 96%;
+    }
+
+    h1 {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+    }
+
+    .container-calculadora {
+        width: 96%;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
 }

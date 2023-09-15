@@ -60,3 +60,13 @@ function calculateImc() {
         }
     }    
 }
+
+function clearValues() {
+    const weight = document.querySelector("#weight");
+    const height = document.querySelector("#height");
+    const result = document.querySelector("h2");
+
+    weight.value = "";
+    height.value = "";
+    result.innerHTML = "Informe seus dados!";
+}
